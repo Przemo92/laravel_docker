@@ -26,7 +26,7 @@
             <div class="card">
                 <div class="card-header">Zapisano palindrom: <br>
                     id: {{ $palindrome->id}} <br>
-                    słowo:{{ $palindrome->word }} <br>
+                    słowo: {{ $palindrome->word }} <br>
                     utworzono: {{ $palindrome->created_at}}</div><br>
 
                 <a href="/palindromes">Wyślij kolejne słowo do bazy danych</a>
