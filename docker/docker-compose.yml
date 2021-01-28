@@ -3,7 +3,7 @@ version: "3.4"
 services:
   web:
     image: nginx:latest
-    container_name: "${PROJECT_NAME}"
+    container_name: "test"
     ports:
       - "80:80"
     volumes:
@@ -17,7 +17,7 @@ services:
 
   php:
     build: .
-    image: "${PROJECT_NAME}/php"
+    image: "test/php"
     container_name: "test-backend"
     volumes:
       - ../:/var/www
@@ -47,4 +47,4 @@ services:
 
 volumes:
   db-volume:
-    name: ${PROJECT_NAME}-db-volume
+    name: test-db-volume
