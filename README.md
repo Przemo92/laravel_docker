@@ -12,9 +12,8 @@ composer, docker, docker-compose, git
 9. Zbadanie konteneru z baza danych ||  docker inspect {id_kontenera_test-database}
 10. Spisujemy adres IP tego kontenera.
 11. W folderze z projektem wchodzimy do pliku .env, w miejsce DB_HOST= {adres IP kontenera z baza danych} oraz poprawiamy DB_DATABASE=test
-12. Ustawiamy adres IP dla redisa w ten sam sposób co 
-13. Zbadanie konteneru z redisem ||  docker inspect {id_kontenera_test-redis}
-14. Spisujemy adres IP tego kontenera.
-15. W folderze z projektem wchodzimy do pliku .env, w miejsce REDIS_HOST= {adres IP kontenera z redisem}
-16. Po konfiguracji środowiska otwieramy przeglądarke, wpisujemy http://localhost/palindromes
-17. W okienku wpisujemy słowo, przycisk wyślij zapisuje palindrom do bazy danych i przekierowuje do okna z id, palindromem oraz data utworzenia zapisanego słowa.
+12. Zbadanie konteneru z redisem ||  docker inspect {id_kontenera_test-redis}
+13. Spisujemy adres IP tego kontenera.
+14. W folderze z projektem wchodzimy do pliku .env, w miejsce REDIS_HOST= {adres IP kontenera z redisem}
+15. Po konfiguracji środowiska otwieramy przeglądarke, wpisujemy http://localhost/palindromes
+16. W okienku wpisujemy słowo, przycisk wyślij zapisuje palindrom do bazy danych i przekierowuje do okna z id, palindromem oraz data utworzenia zapisanego słowa.
